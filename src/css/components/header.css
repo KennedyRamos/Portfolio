@@ -1,0 +1,48 @@
+@import'../variables.css';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+/* Título */
+.header__title a{
+    color: #000;
+}
+
+.header__title a:active{
+    color: var(--secondary-color);
+}
+
+/* NavBar */
+.toggle{
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.header__navigation{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 4rem 1rem 0rem;
+}
+
+.header__navigation ul{
+    display: grid;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    font-size: 1.5rem;
+}
+
+ul a:active {
+    color: var(--secondary-color);
+}
