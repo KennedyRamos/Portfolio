@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    margin: 1rem 1rem;
 }
 
 /* Título */
@@ -18,7 +18,9 @@
 
 /* NavBar */
 .toggle{
-    background-color: #fff;
+    background: none;
+    position: relative;
+    z-index: 1;
     border: none;
     font-size: 2rem;
     cursor: pointer;
@@ -33,6 +35,10 @@
     padding: 4rem 1rem 0rem;
 }
 
+.header__navigation.active {
+  display: block;
+}
+
 .header__navigation ul{
     display: grid;
     gap: 1rem;
@@ -42,6 +48,7 @@
     box-shadow: 0 0 10px #000;
     font-size: 1.5rem;
 }
+
 
 ul a:active {
     color: var(--secondary-color);
